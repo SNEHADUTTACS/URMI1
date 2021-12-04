@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRENT DATE AND TIME</title>
+    <h2>CURRENT DATE AND TIME</h2>
+    
+   </head>
+<body>
+    <h2 id="displaydatetime"></h2>
+    <script text="text/javascript">
+        var today =new Date();
+        var day=today.getDate();
+        var daylist=["sunday","monday","tuesday","thursday","friday","saturday"];
+        var date= today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate();
+        var time =today.getHours() + ":" +today.getMinutes()+":"+today.getSeconds();
+        var datetime = date+' '+time;
+        document.getElementById("displaydatetime").innerHTML=datetime;
+        </script>
+    
+</body>
+</html>
